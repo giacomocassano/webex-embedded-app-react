@@ -1,0 +1,2 @@
+RewriteEngine On RewriteCond %{SERVER_PORT} 80 RewriteRule ^(.*)$ https://evoliwebex.giacomocassano.it/$1 [R,L]
+<IfModule mod_rewrite.c> RewriteEngine On RewriteBase / RewriteRule ^index\.html$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteCond %{REQUEST_FILENAME} !-l RewriteRule . /index.html [L] </IfModule>
